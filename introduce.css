@@ -1,20 +1,23 @@
 html {
     scroll-behavior: smooth;
 }
+
 header {
     font-family: Comic Sans MS, Comic Sans, cursive;
     letter-spacing: 3px;
 }
-.welcome{
+
+.welcome {
     border-bottom: 2px solid;
-    background: url('') ;
+    background: url('');
     margin: 1px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 
 }
-.intro{
+
+.intro {
     font-size: 35px;
     margin: 50px;
     flex-grow: 2;
@@ -22,17 +25,21 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 nav {
     flex-grow: 1;
 }
-nav .menu{
+
+nav .menu {
     list-style: none;
     display: flex;
 }
-.menu .menu-item{
+
+.menu .menu-item {
     margin: 50px;
 }
-.menu-item a{
+
+.menu-item a {
     text-decoration: none;
     font-size: 25px;
     color: black;
@@ -40,6 +47,7 @@ nav .menu{
     justify-content: center;
     align-items: center;
 }
+
 section {
     margin: 5px;
     font-family: Comic Sans MS, Comic Sans, cursive;
@@ -47,7 +55,7 @@ section {
 
 }
 
-section h2{ 
+section h2 {
     font-size: 35px;
     font-family: Comic Sans MS, Comic Sans, cursive;
     letter-spacing: 3px;
@@ -56,12 +64,14 @@ section h2{
     justify-content: center;
     align-items: center;
 }
+
 #profile {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
+
 #profile .mylogo {
     width: 200px;
     height: 200px;
@@ -69,10 +79,12 @@ section h2{
     border-radius: 20px;
     margin: 10px;
 }
+
 #profile .name {
     line-height: 2;
     margin: 10px;
 }
+
 #favorite {
     display: flex;
     flex-direction: row;
@@ -80,6 +92,7 @@ section h2{
     align-items: center;
     transition: 2s;
 }
+
 #favorite .box {
     width: 300px;
     height: 400px;
@@ -89,74 +102,91 @@ section h2{
     justify-content: center;
     align-items: center;
 }
+
 .box1 {
     background: url('https://media.istockphoto.com/photos/closeup-photo-of-bass-guitar-player-picture-id651209608?k=20&m=651209608&s=612x612&w=0&h=AiB7XH40Akl40uf8alG9Imq4CQA-4wGAx8mvd4TOAKM=') no-repeat;
     background-size: cover;
 }
+
 .box1:hover {
-    animation:my_animation;
+    animation: my_animation;
     animation-duration: .5s;
     animation-fill-mode: both;
 }
+
 .box1:hover::before {
     content: 'Play Bass Guitar';
+    text-align: center;
     font-family: Comic Sans MS, Comic Sans, cursive;
     color: white;
 }
-.box2{
+
+.box2 {
     background: url('https://cdn.vox-cdn.com/thumbor/JxqCAVhPjZugPHnYb95JQ0U4ZUA=/0x40:1000x790/920x613/filters:focal(0x40:1000x790):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/46889290/shutterstock_266758136.0.0.jpg') no-repeat;
     background-size: cover;
 }
+
 .box2:hover {
-    animation:my_animation;
+    animation: my_animation;
     animation-duration: .5s;
     animation-fill-mode: both;
 }
+
 .box2:hover::before {
     content: 'Running';
+    text-align: center;
     font-family: Comic Sans MS, Comic Sans, cursive;
     color: white;
 }
+
 .box3 {
     background: url('https://ppss.kr/wp-content/uploads/2017/11/1-119.jpg') no-repeat;
     background-size: cover;
 }
+
 .box3:hover {
-    animation:my_animation;
+    animation: my_animation;
     animation-duration: .5s;
     animation-fill-mode: both;
 }
+
 .box3:hover::before {
     content: 'Food tour';
+    text-align: center;
     font-family: Comic Sans MS, Comic Sans, cursive;
     color: white;
 }
 
 
-@keyframes my_animation{
-    0%{
+@keyframes my_animation {
+    0% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         opacity: 0.5;
     }
 }
+
 address {
     font-family: Comic Sans MS, Comic Sans, cursive;
     letter-spacing: 3px;
     border-top: 2px solid;
     margin: 1px;
 }
-#contact { 
+
+#contact {
     font-size: 35px;
     text-align: center;
     margin: 5px;
 }
+
 .icon {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .icon .mail {
     width: 45px;
     height: 45px;
@@ -165,14 +195,17 @@ address {
     border-radius: 10px;
     margin: 50px;
 }
+
 .icon .github {
     width: 45px;
     height: 45px;
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAApCAMAAAA4Y0Y/AAAAbFBMVEX///8AAAAXFRYODA0IBQf5+fn8/Pzp6ena2tp/f392dnYTERJ5eXkZGRlNTEzCwsKHh4eXlpeioqLw8PBWVVa6urqurq6oqKhubm7Ozs45NzhpaGkoJyfIyMiRkZFFRUVeXl4xMTEhISE/Pj7zU0ktAAADGUlEQVRYhe2W25aqMAyGSQ+0DigIAiqiou//jvtP8ICAM2uvmXFfbHPhlLTTL03/tA2Ct73tvzD7D5BFfNip07au3AupeUxEOooibYhW/lXYjEjdzdDHa7DHPpWNdq9I9oqUfsBqZdTvg9fAbokipbC/vFjaAtyG9xFJvZufdqvlKJamSUQLPmmah46RY2wFqUgFYRkRzdsT5LXPORSKrwPsAU5jILiMlbDt0dERd6ETDdYycIws1JEyR56+U7HjaTNsOF1VfSatScwHjgyteTlJwvkgTTMeEpOZP8z6QUZ9zq2AEG7fsp6zYuyxKsr9wV652WU53+BiL1U0Hzg/WOCUS7vF5MU9oujgmKu/yXVCSAbeXLxlNwCr7fW43HZc5+wj1zrZo9y5nLmnIMmqpycQVKX0eeROeYNFMs3Dci0SvPRIAW/5nrlrD6uZO0MfYoIKz+BqJZJ4dgLtGZCO3AmHs+BWibkRdZXCZs7iK2vICHcZ3BSnwU0hesunAS2Yyz34Kae5MXOzkXsDd9RyS1Iqs7GgQ3wt/bk1mhaHirkXE67ucyku4aHDJ9zp9UY7blU3LoLvuJ2TOwfr7XNpi37kn8LR5Nc8j8qoKyQtoRZAbJDutKY7d1LPE1yOL5/klrwwGt33C1QXFypnXEidwP6WWz7leqmY/cC7Ea9sO5RkTCip/5Jr9IDL4568YU44JvuVwua03A9d8a1ZHN7acsAdnZNpt7jF4/7qaSw22MQI8eNe4W5PfC1eqxpHYyeenq44hvOseORyMIv9in9FzweRRP2EmxOt85SuNwsOQrkSe4dYQlKvLF1wDXPxT/hKA3xduKSwZZcAhWs6mbMmp21JVLsjxnUXpr28PWh1T8C6m+5cojcSlSVM6HNxLCILbOkR3JjmFd+pVD3D4p4z5P2sji8CaGW1EfUvees3jRdhhuGlHv3Gh4G1Vj5DNGRY4/EX7ZC/MeSzh3E+5+fUTe58QQH7ND8/Z/kOb9d4kd+5mr56pfyIhTVvxY0bUfuqt3tzvnFbmo/vid+zzRVWFNMn+dve9rae/QEbOCWaN66kwAAAAABJRU5ErkJggg==') no-repeat;
     background-size: cover;
     border-radius: 10px;
-    margin: 50px;ㄴ
+    margin: 50px;
+    ㄴ
 }
+
 .icon .velog {
     width: 45px;
     height: 45px;
